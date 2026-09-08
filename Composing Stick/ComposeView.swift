@@ -120,28 +120,6 @@ struct ComposeView: View {
             forme.lines = Array(repeating: [], count: spec.copy.count)
         }
         registerOffset = spec.secondInk == nil ? 0 : 0.4
-        guard Bench10.fill else { return }
-        let banned: Set<String> = spec.constraint == 2 ? ["3em"] : []
-        forme = Setter.fillForme(spec.copy, face: face, size: Double(spec.size),
-                                 measurePicas: spec.measurePicas, banned: banned,
-                                 turnAll: spec.constraint == 3)
-        let wanted = Bench10.stage
-        if wanted >= 1 {
-            furniture = [true, true, true, true]
-            quoin = 0.66
-            quoinLocked = true
-        }
-        if wanted >= 2 {
-            brayerCharge = 0.72
-            inkLaid = 0.68
-        }
-        if wanted >= 3 {
-            depth = 0.58
-            depthLocked = true
-            makeready = 2
-            registerOffset = spec.secondInk == nil ? 0 : 0.06
-        }
-        stage = max(0, min(3, wanted))
     }
 
     private func tick() {

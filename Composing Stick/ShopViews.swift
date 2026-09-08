@@ -9,7 +9,6 @@ struct ShopView: View {
 
     private var job: DayJob { Daily.job(shop.today) }
     private var hour: Double {
-        if let forced = Bench10.hour { return forced }
         let parts = Calendar.current.dateComponents([.hour, .minute], from: now)
         return Double(parts.hour ?? 12) + Double(parts.minute ?? 0) / 60
     }
