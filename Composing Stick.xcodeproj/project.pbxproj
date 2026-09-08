@@ -1,0 +1,373 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CS000000000000000003001 /* BookViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CS000000000000000001001 /* BookViews.swift */; };
+		CS000000000000000003002 /* CaseRoomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CS000000000000000001002 /* CaseRoomViews.swift */; };
+		CS000000000000000003003 /* Commissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CS000000000000000001003 /* Commissions.swift */; };
+		CS000000000000000003004 /* ComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CS000000000000000001004 /* ComposeView.swift */; };
+		CS000000000000000003005 /* ComposingStickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CS000000000000000001005 /* ComposingStickApp.swift */; };
+		CS000000000000000003006 /* GlyphForge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CS000000000000000001006 /* GlyphForge.swift */; };
+		CS000000000000000003007 /* JobViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CS000000000000000001007 /* JobViews.swift */; };
+		CS000000000000000003008 /* Manual.swift in Sources */ = {isa = PBXBuildFile; fileRef = CS000000000000000001008 /* Manual.swift */; };
+		CS000000000000000003009 /* ManualViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CS000000000000000001009 /* ManualViews.swift */; };
+		CS000000000000000003010 /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CS000000000000000001010 /* Setter.swift */; };
+		CS000000000000000003011 /* ShopViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CS000000000000000001011 /* ShopViews.swift */; };
+		CS000000000000000003012 /* StickCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = CS000000000000000001012 /* StickCanvas.swift */; };
+		CS000000000000000003013 /* StickComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = CS000000000000000001013 /* StickComponents.swift */; };
+		CS000000000000000003014 /* StickIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = CS000000000000000001014 /* StickIcons.swift */; };
+		CS000000000000000003015 /* StickStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CS000000000000000001015 /* StickStore.swift */; };
+		CS000000000000000003016 /* StickTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CS000000000000000001016 /* StickTheme.swift */; };
+		CS000000000000000003017 /* TypeCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CS000000000000000001017 /* TypeCase.swift */; };
+		CS000000000000000004001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CS000000000000000002001 /* Assets.xcassets */; };
+		CS000000000000000004002 /* Art in Resources */ = {isa = PBXBuildFile; fileRef = CS000000000000000002002 /* Art */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CS000000000000000001001 /* BookViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViews.swift; sourceTree = "<group>"; };
+		CS000000000000000001002 /* CaseRoomViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseRoomViews.swift; sourceTree = "<group>"; };
+		CS000000000000000001003 /* Commissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commissions.swift; sourceTree = "<group>"; };
+		CS000000000000000001004 /* ComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeView.swift; sourceTree = "<group>"; };
+		CS000000000000000001005 /* ComposingStickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposingStickApp.swift; sourceTree = "<group>"; };
+		CS000000000000000001006 /* GlyphForge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlyphForge.swift; sourceTree = "<group>"; };
+		CS000000000000000001007 /* JobViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobViews.swift; sourceTree = "<group>"; };
+		CS000000000000000001008 /* Manual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manual.swift; sourceTree = "<group>"; };
+		CS000000000000000001009 /* ManualViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualViews.swift; sourceTree = "<group>"; };
+		CS000000000000000001010 /* Setter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setter.swift; sourceTree = "<group>"; };
+		CS000000000000000001011 /* ShopViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViews.swift; sourceTree = "<group>"; };
+		CS000000000000000001012 /* StickCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickCanvas.swift; sourceTree = "<group>"; };
+		CS000000000000000001013 /* StickComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickComponents.swift; sourceTree = "<group>"; };
+		CS000000000000000001014 /* StickIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickIcons.swift; sourceTree = "<group>"; };
+		CS000000000000000001015 /* StickStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickStore.swift; sourceTree = "<group>"; };
+		CS000000000000000001016 /* StickTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickTheme.swift; sourceTree = "<group>"; };
+		CS000000000000000001017 /* TypeCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeCase.swift; sourceTree = "<group>"; };
+		CS000000000000000002001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CS000000000000000002002 /* Art */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Art; sourceTree = "<group>"; };
+		CS000000000000000002090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CS000000000000000002099 /* Composing Stick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Composing Stick.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CS000000000000000005001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CS000000000000000006001 = {
+			isa = PBXGroup;
+			children = (
+				CS000000000000000006002 /* Composing Stick */,
+				CS000000000000000006003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CS000000000000000006002 /* Composing Stick */ = {
+			isa = PBXGroup;
+			children = (
+				CS000000000000000001001 /* BookViews.swift */,
+				CS000000000000000001002 /* CaseRoomViews.swift */,
+				CS000000000000000001003 /* Commissions.swift */,
+				CS000000000000000001004 /* ComposeView.swift */,
+				CS000000000000000001005 /* ComposingStickApp.swift */,
+				CS000000000000000001006 /* GlyphForge.swift */,
+				CS000000000000000001007 /* JobViews.swift */,
+				CS000000000000000001008 /* Manual.swift */,
+				CS000000000000000001009 /* ManualViews.swift */,
+				CS000000000000000001010 /* Setter.swift */,
+				CS000000000000000001011 /* ShopViews.swift */,
+				CS000000000000000001012 /* StickCanvas.swift */,
+				CS000000000000000001013 /* StickComponents.swift */,
+				CS000000000000000001014 /* StickIcons.swift */,
+				CS000000000000000001015 /* StickStore.swift */,
+				CS000000000000000001016 /* StickTheme.swift */,
+				CS000000000000000001017 /* TypeCase.swift */,
+				CS000000000000000002001 /* Assets.xcassets */,
+				CS000000000000000002002 /* Art */,
+				CS000000000000000002090 /* Info.plist */,
+			);
+			path = "Composing Stick";
+			sourceTree = "<group>";
+		};
+		CS000000000000000006003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CS000000000000000002099 /* Composing Stick.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CS000000000000000007001 /* Composing Stick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CS000000000000000008001 /* Build configuration list for PBXNativeTarget "Composing Stick" */;
+			buildPhases = (
+				CS000000000000000009001 /* Sources */,
+				CS000000000000000005001 /* Frameworks */,
+				CS000000000000000009002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Composing Stick";
+			productName = "Composing Stick";
+			productReference = CS000000000000000002099 /* Composing Stick.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CS000000000000000009501 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					CS000000000000000007001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = CS000000000000000008002 /* Build configuration list for PBXProject "Composing Stick" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CS000000000000000006001;
+			productRefGroup = CS000000000000000006003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CS000000000000000007001 /* Composing Stick */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CS000000000000000009002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CS000000000000000004001 /* Assets.xcassets in Resources */,
+				CS000000000000000004002 /* Art in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CS000000000000000009001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CS000000000000000003001 /* BookViews.swift in Sources */,
+				CS000000000000000003002 /* CaseRoomViews.swift in Sources */,
+				CS000000000000000003003 /* Commissions.swift in Sources */,
+				CS000000000000000003004 /* ComposeView.swift in Sources */,
+				CS000000000000000003005 /* ComposingStickApp.swift in Sources */,
+				CS000000000000000003006 /* GlyphForge.swift in Sources */,
+				CS000000000000000003007 /* JobViews.swift in Sources */,
+				CS000000000000000003008 /* Manual.swift in Sources */,
+				CS000000000000000003009 /* ManualViews.swift in Sources */,
+				CS000000000000000003010 /* Setter.swift in Sources */,
+				CS000000000000000003011 /* ShopViews.swift in Sources */,
+				CS000000000000000003012 /* StickCanvas.swift in Sources */,
+				CS000000000000000003013 /* StickComponents.swift in Sources */,
+				CS000000000000000003014 /* StickIcons.swift in Sources */,
+				CS000000000000000003015 /* StickStore.swift in Sources */,
+				CS000000000000000003016 /* StickTheme.swift in Sources */,
+				CS000000000000000003017 /* TypeCase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CS000000000000000008101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CS000000000000000008102 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		CS000000000000000008103 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Composing Stick/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.composingstickpress.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CS000000000000000008104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Composing Stick/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.composingstickpress.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CS000000000000000008001 /* Build configuration list for PBXNativeTarget "Composing Stick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CS000000000000000008103 /* Debug */,
+				CS000000000000000008104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CS000000000000000008002 /* Build configuration list for PBXProject "Composing Stick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CS000000000000000008101 /* Debug */,
+				CS000000000000000008102 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CS000000000000000009501 /* Project object */;
+}
