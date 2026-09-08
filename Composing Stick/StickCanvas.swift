@@ -111,7 +111,7 @@ struct CaseTray: View {
                         ctx.stroke(Path(roundedRect: r, cornerRadius: 1.5),
                                    with: .color(Press.oakDark.opacity(0.85)), lineWidth: 1)
                         if dimmed.contains(box.key) { continue }
-                        drawContents(ctx, box: box, rect: r)
+                        drawContents(ctx, box: box, rect: r, tone: tone)
                     }
                 }
                 Color.clear
@@ -132,7 +132,7 @@ struct CaseTray: View {
         }
     }
 
-    private func drawContents(_ ctx: GraphicsContext, box: CaseBox, rect: CGRect) {
+    private func drawContents(_ ctx: GraphicsContext, box: CaseBox, rect: CGRect, tone: Color) {
         if box.kind == 3 || box.kind == 5 {
             let count = box.kind == 5 ? 3 : 4
             for k in 0..<count {
@@ -153,7 +153,7 @@ struct CaseTray: View {
             var moved = ctx
             moved.translateBy(x: -adv / 2, y: 0)
             moved.fill(glyph, with: .color(Press.leadDark))
-            moved.fill(counters, with: .color(Press.leadLight.opacity(0.9)))
+            moved.fill(counters, with: .color(tone))
         }
         if hint >= 2 {
             let label = Text(verbatim: box.label)
@@ -218,7 +218,7 @@ struct StickBed: View {
                             var moved = ctx
                             moved.translateBy(x: -adv / 2, y: 0)
                             moved.fill(glyph, with: .color(Press.leadDark))
-                            moved.fill(counters, with: .color(Press.leadLight))
+                            moved.fill(counters, with: .color(Press.lead))
                             if showNicks {
                                 let nickY = sort.turned ? top + rowH * 0.90 : top + rowH * 0.10
                                 ctx.fill(Path(CGRect(x: body.minX + 0.8, y: nickY,

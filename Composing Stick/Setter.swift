@@ -32,10 +32,10 @@ public enum Setter {
         var left = points
         var pass = 0
         let rows = rungs(size, banned: banned)
-        while left >= 0.5 && pass < 600 {
+        while left >= 0.45 && pass < 600 {
             pass += 1
             var placed = false
-            for row in rows where row.1 <= left + 0.0001 {
+            for row in rows where row.1 <= left + 0.002 {
                 out.append(row.0)
                 left -= row.1
                 placed = true
@@ -51,6 +51,13 @@ public enum Setter {
         Measure.deficit(line, face, Double(size), measurePicas: measurePicas)
     }
 
+    public static func fill(_ points: Double, _ size: Double,
+                            banned: Set<String>) -> ([String], Double) {
+        let keys = spaceRun(points, size, banned: banned)
+        let total = keys.reduce(0.0) { $0 + JobCase.spaceWidth($1, size) }
+        return (keys, total)
+    }
+
     public static func compose(_ text: String, face: TypeFace, size: Double,
                                measurePicas: Double, banned: Set<String> = [],
                                turnAll: Bool = false) -> [SetSort]? {
@@ -58,33 +65,49 @@ public enum Setter {
         let body = naturalWidth(text, face, size)
         if body > goal + 0.0001 { return nil }
         let chars = Array(text)
-        var gaps = 0
+        var gapAt: Set<Int> = []
         for (i, ch) in chars.enumerated() where ch == " " {
-            if i > 0 && i < chars.count - 1 { gaps += 1 }
+            if i > 0 && i < chars.count - 1 { gapAt.insert(i) }
         }
-        var slack = goal - body
-        var perGap: [String] = []
+        let slack = goal - body
+        let gaps = gapAt.count
+        var wordSpace = 0.0
+        var lead = 0.0
         if gaps > 0 {
             let share = slack / Double(gaps)
-            for row in rungs(size, banned: banned) where row.0 != "quad" {
-                if row.1 <= share + 0.0001 { perGap = [row.0]; break }
-            }
+            let roomy = size * 0.56
+            wordSpace = share > roomy ? size * 0.38 : share
+            let rest = slack - wordSpace * Double(gaps)
+            if rest > size * 0.5 { lead = rest * 0.5 }
+        } else if slack > size * 0.5 {
+            lead = slack * 0.5
         }
-        let gapWidth = perGap.reduce(0.0) { $0 + JobCase.spaceWidth($1, size) }
+
         var out: [SetSort] = []
-        for ch in chars {
+        if lead > 0.5 {
+            let (keys, _) = fill(lead, size, banned: banned)
+            for key in keys { out.append(SetSort(key: key)) }
+        }
+        var wanted = 0.0
+        var spent = 0.0
+        for (i, ch) in chars.enumerated() {
             let s = String(ch)
             if s == " " {
-                if !out.isEmpty && !perGap.isEmpty {
-                    for key in perGap { out.append(SetSort(key: key)) }
-                    slack -= gapWidth
-                }
+                guard gapAt.contains(i) else { continue }
+                wanted += wordSpace
+                let (keys, got) = fill(max(0, wanted - spent), size, banned: banned)
+                for key in keys { out.append(SetSort(key: key)) }
+                spent += got
                 continue
             }
             out.append(SetSort(key: s, turned: turnAll))
         }
-        if slack < -0.0001 { return nil }
-        for key in spaceRun(slack, size, banned: banned) { out.append(SetSort(key: key)) }
+        let short = Measure.deficit(out, face, size, measurePicas: measurePicas)
+        if short < -0.0001 { return nil }
+        if short >= 0.5 {
+            let (keys, _) = fill(short, size, banned: banned)
+            for key in keys { out.append(SetSort(key: key)) }
+        }
         let off = Measure.deficit(out, face, size, measurePicas: measurePicas)
         if abs(off) >= 0.5 { return nil }
         return out
